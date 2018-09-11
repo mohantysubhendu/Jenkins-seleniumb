@@ -105,6 +105,31 @@ public class NewTest {
 			 //Thread.sleep(2000);
 			 
 	  }
+	  
+	  // to verify the fields in login page
+	  
+	  @Test
+	  public void checkFields() {
+		  if((driver.findElements(By.tagName("form")) != null) && (driver.findElements(By.tagName("input")) != null)) {
+			    System.out.println("email and password fields are present");
+		  }else
+			    System.out.println("email and password fields are not present");
+	  }
+
+	  
+	  //to verify the profile name is present or not
+/*	  
+	  @Test
+	  public void test_profileName() throws InterruptedException
+	  {
+		
+			System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver");
+			Thread.sleep(2000);
+			String baseUrl="https://admin-dev.salusconnect.io";
+			 driver.get(baseUrl);
+			 driver.findElement(By.xpath(//*[@id="profileDropdown"]);
+		  
+	  }*/
   
   
 }
