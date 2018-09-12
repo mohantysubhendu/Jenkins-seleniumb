@@ -116,6 +116,24 @@ public class NewTest {
 			    System.out.println("email and password fields are not present");
 	  }
 
+	
+	// to verify the profile name is present or not
+	
+	@Test
+	 public void profieName() throws InterruptedException{
+	 	driver.get("https://admin-dev.salusconnect.io/#/login");
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("/html/body/div[1]/div[1]/div[2]/div/div/div[2]/div/form/div[1]/div/div[1]/input")).sendKeys("rameshamr831+25@gmail.com");
+		Thread.sleep(3000);
+		driver.findElement(By.xpath("//*[@id=\"password\"]")).sendKeys("Ab123456");
+		Thread.sleep(3000);
+		driver.findElement(By.xpath("//*[@id=\"signInBtn\"]")).click();
+		Thread.sleep(10000);
+		WebElement textIndiaWebElement= driver.findElement(By.xpath("//*[@id=\"profileDropdown\"]/span[1]"));
+		String innerText= textIndiaWebElement.getText();
+		System.out.println("Inner text is :"+innerText);
+		Assert.assertEquals(innerText, "chitti");
+ 	 }
 	  
 	  //to verify the profile name is present or not
 /*	  
