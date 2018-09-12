@@ -132,7 +132,7 @@ public class NewTest {
 			Thread.sleep(3000);
 			driver.findElement(By.xpath("//*[@id=\"signInBtn\"]")).click();
 			Thread.sleep(10000);
-			WebElement textIndiaWebElement= driver.findElement(By.xpath("//*[@id=\"profileDropdown\"]/span[1]"));
+			WebElement textIndiaWebElement= driver.findElement(By.xpath("/html/body/div[1]/header/div/div/div[2]/div/div[8]/button/span[1]"));
 			String innerText= textIndiaWebElement.getText();
 			System.out.println("Inner text is :"+innerText);
 			Assert.assertEquals(innerText, "chitti");
