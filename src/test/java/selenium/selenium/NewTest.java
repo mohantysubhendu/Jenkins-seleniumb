@@ -88,6 +88,7 @@ public class NewTest {
 		  String url=driver.getCurrentUrl();
 		  Thread.sleep(2000);
 		  Assert.assertEquals(url,"https://admin-dev.salusconnect.io/#/login/forgotPassword");
+		  System.out.println("Inside forgot password");
 		  //driver.navigate().back();
 		  Thread.sleep(4000);
 	  }
