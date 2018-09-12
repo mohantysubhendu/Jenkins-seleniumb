@@ -2,40 +2,40 @@
 <testng-results skipped="0" failed="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="40162" started-at="2018-09-12T11:22:05Z" finished-at="2018-09-12T11:22:45Z">
+  <suite name="Default suite" duration-ms="41772" started-at="2018-09-12T12:16:44Z" finished-at="2018-09-12T12:17:26Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="40162" started-at="2018-09-12T11:22:05Z" finished-at="2018-09-12T11:22:45Z">
+    <test name="Default test" duration-ms="41772" started-at="2018-09-12T12:16:44Z" finished-at="2018-09-12T12:17:26Z">
       <class name="selenium.selenium.NewTest">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:selenium.selenium.NewTest@14acaea5]" name="beforeClass" is-config="true" duration-ms="740" started-at="2018-09-12T16:52:05Z" finished-at="2018-09-12T16:52:06Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:selenium.selenium.NewTest@59fa1d9b]" name="beforeClass" is-config="true" duration-ms="800" started-at="2018-09-12T17:46:45Z" finished-at="2018-09-12T17:46:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="checkFields()[pri:0, instance:selenium.selenium.NewTest@14acaea5]" name="checkFields" duration-ms="51" started-at="2018-09-12T16:52:06Z" finished-at="2018-09-12T16:52:06Z">
+        <test-method status="PASS" signature="checkFields()[pri:0, instance:selenium.selenium.NewTest@59fa1d9b]" name="checkFields" duration-ms="55" started-at="2018-09-12T17:46:45Z" finished-at="2018-09-12T17:46:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkFields -->
-        <test-method status="PASS" signature="profieName()[pri:0, instance:selenium.selenium.NewTest@14acaea5]" name="profieName" duration-ms="26879" started-at="2018-09-12T16:52:06Z" finished-at="2018-09-12T16:52:33Z">
+        <test-method status="PASS" signature="profieName()[pri:0, instance:selenium.selenium.NewTest@59fa1d9b]" name="profieName" duration-ms="26582" started-at="2018-09-12T17:46:45Z" finished-at="2018-09-12T17:47:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- profieName -->
-        <test-method status="PASS" signature="testUrl()[pri:0, instance:selenium.selenium.NewTest@14acaea5]" name="testUrl" duration-ms="4809" started-at="2018-09-12T16:52:33Z" finished-at="2018-09-12T16:52:38Z">
+        <test-method status="PASS" signature="testUrl()[pri:0, instance:selenium.selenium.NewTest@59fa1d9b]" name="testUrl" duration-ms="6808" started-at="2018-09-12T17:47:12Z" finished-at="2018-09-12T17:47:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testUrl -->
-        <test-method status="PASS" signature="test_Login()[pri:0, instance:selenium.selenium.NewTest@14acaea5]" name="test_Login" duration-ms="2947" started-at="2018-09-12T16:52:38Z" finished-at="2018-09-12T16:52:41Z">
+        <test-method status="PASS" signature="test_Login()[pri:0, instance:selenium.selenium.NewTest@59fa1d9b]" name="test_Login" duration-ms="2847" started-at="2018-09-12T17:47:19Z" finished-at="2018-09-12T17:47:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_Login -->
-        <test-method status="PASS" signature="verifyForgot_Password()[pri:0, instance:selenium.selenium.NewTest@14acaea5]" name="verifyForgot_Password" duration-ms="4646" started-at="2018-09-12T16:52:41Z" finished-at="2018-09-12T16:52:45Z">
+        <test-method status="PASS" signature="verifyForgot_Password()[pri:0, instance:selenium.selenium.NewTest@59fa1d9b]" name="verifyForgot_Password" duration-ms="4587" started-at="2018-09-12T17:47:22Z" finished-at="2018-09-12T17:47:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyForgot_Password -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:selenium.selenium.NewTest@14acaea5]" name="afterClass" is-config="true" duration-ms="72" started-at="2018-09-12T16:52:45Z" finished-at="2018-09-12T16:52:45Z">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:selenium.selenium.NewTest@59fa1d9b]" name="afterClass" is-config="true" duration-ms="75" started-at="2018-09-12T17:47:26Z" finished-at="2018-09-12T17:47:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
       </class> <!-- selenium.selenium.NewTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
