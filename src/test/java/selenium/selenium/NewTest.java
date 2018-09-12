@@ -84,7 +84,7 @@ public class NewTest {
 		  driver.get(baseUrl);
 		  Thread.sleep(2000);
 		  System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver");
-		  driver.findElement(By.linkText("Forgot password")).click();
+		  driver.findElement(By.xpath("/html/body/div[1]/div[1]/div[2]/div/div/div[2]/div/form/div[3]/div/a")).click();
 		  String url=driver.getCurrentUrl();
 		  Thread.sleep(2000);
 		  Assert.assertEquals(url,"https://admin-dev.salusconnect.io/#/login/forgotPassword");
