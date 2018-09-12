@@ -69,8 +69,12 @@ public class NewTest {
 	  {
 		  String baseUrl="https://admin-dev.salusconnect.io";
 		  driver.get(baseUrl);
+<<<<<<< HEAD
 		  Thread.sleep(4000);
 		 // System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver");
+=======
+		  Thread.sleep(2000);
+>>>>>>> 03d1373f7324690d024590702f2442c53212e940
 		  String url=driver.getCurrentUrl();
 		  Assert.assertEquals(url,"https://admin-dev.salusconnect.io/#/login");
 		  Thread.sleep(2000);
@@ -83,14 +87,20 @@ public class NewTest {
 	  {
 		  String baseUrl="https://admin-dev.salusconnect.io";
 		  driver.get(baseUrl);
+<<<<<<< HEAD
 		  Thread.sleep(2000);
 		  System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver");
 		//  driver.findElement(By.linkText("Forgot password")).click();
+=======
+		  Thread.sleep(5000);
+>>>>>>> 03d1373f7324690d024590702f2442c53212e940
 		  driver.findElement(By.xpath("/html/body/div[1]/div[1]/div[2]/div/div/div[2]/div/form/div[3]/div/a")).click();
 		  String url=driver.getCurrentUrl();
 		  Thread.sleep(2000);
 		  Assert.assertEquals(url,"https://admin-dev.salusconnect.io/#/login/forgotPassword");
+		  System.out.println("Inside forgot password");
 		  //driver.navigate().back();
+		  Thread.sleep(4000);
 	  }
 	  
 	  // to verify username and password is taking you to login page or not
@@ -98,25 +108,27 @@ public class NewTest {
 	  @Test
 	  public void test_Login() throws InterruptedException
 	  {
-			System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver");
+			
 			Thread.sleep(2000);
 			String baseUrl="https://admin-dev.salusconnect.io";
 			 driver.get(baseUrl);
 			 driver.findElement(By.xpath("/html/body/div[1]/div[1]/div[2]/div/div/div[2]/div/form/div[1]/div/div[1]/input")).sendKeys("rameshamr831+25@gmail.com");
 			 driver.findElement(By.xpath("/html/body/div[1]/div[1]/div[2]/div/div/div[2]/div/form/div[2]/div/div[1]/input")).sendKeys("Ab123456");
 			 driver.findElement(By.xpath("/html/body/div[1]/div[1]/div[2]/div/div/div[2]/div/form/div[4]/div/button")).click();
-			 //Thread.sleep(2000);
+			 Thread.sleep(2000);
 			 
 	  }
 	  
 	  // to verify the fields in login page
 	  
 	  @Test
-	  public void checkFields() {
+	  public void checkFields() throws InterruptedException{
 		  if((driver.findElements(By.tagName("form")) != null) && (driver.findElements(By.tagName("input")) != null)) {
 			    System.out.println("email and password fields are present");
 		  }else
 			    System.out.println("email and password fields are not present");
+		  
+		  Thread.sleep(4000);
 	  }
 
 
@@ -140,6 +152,7 @@ public class NewTest {
 			Assert.assertEquals(innerText, "chitti");
 			Thread.sleep(3000);
 			driver.findElement(By.xpath("/html/body/div[1]/header/div/div/div[2]/div/div[7]/a")).click();
+			Thread.sleep(4000);
 			
 	 	 }
 	  
