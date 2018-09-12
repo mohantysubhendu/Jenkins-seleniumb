@@ -111,7 +111,7 @@ public class NewTest {
 	  // to verify the fields in login page
 	  
 	  @Test
-	  public void checkFields() {
+	  public void checkFields() throws InterruptedException{
 		  if((driver.findElements(By.tagName("form")) != null) && (driver.findElements(By.tagName("input")) != null)) {
 			    System.out.println("email and password fields are present");
 		  }else
