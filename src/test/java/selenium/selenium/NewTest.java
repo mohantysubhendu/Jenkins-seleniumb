@@ -89,6 +89,7 @@ public class NewTest {
 		  Thread.sleep(2000);
 		  Assert.assertEquals(url,"https://admin-dev.salusconnect.io/#/login/forgotPassword");
 		  //driver.navigate().back();
+		  Thread.sleep(4000);
 	  }
 	  
 	  // to verify username and password is taking you to login page or not
@@ -103,7 +104,7 @@ public class NewTest {
 			 driver.findElement(By.xpath("/html/body/div[1]/div[1]/div[2]/div/div/div[2]/div/form/div[1]/div/div[1]/input")).sendKeys("rameshamr831+25@gmail.com");
 			 driver.findElement(By.xpath("/html/body/div[1]/div[1]/div[2]/div/div/div[2]/div/form/div[2]/div/div[1]/input")).sendKeys("Ab123456");
 			 driver.findElement(By.xpath("/html/body/div[1]/div[1]/div[2]/div/div/div[2]/div/form/div[4]/div/button")).click();
-			 //Thread.sleep(2000);
+			 Thread.sleep(2000);
 			 
 	  }
 	  
@@ -115,6 +116,8 @@ public class NewTest {
 			    System.out.println("email and password fields are present");
 		  }else
 			    System.out.println("email and password fields are not present");
+		  
+		  Thread.sleep(4000);
 	  }
 
 
@@ -138,6 +141,7 @@ public class NewTest {
 			Assert.assertEquals(innerText, "chitti");
 			Thread.sleep(3000);
 			driver.findElement(By.xpath("/html/body/div[1]/header/div/div/div[2]/div/div[7]/a")).click();
+			Thread.sleep(4000);
 			
 	 	 }
 	  
