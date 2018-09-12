@@ -117,7 +117,10 @@ public class NewTest {
 			    System.out.println("email and password fields are not present");
 	  }
 
-	  // to verify profile name is present or not
+
+	
+	// to verify the profile name is present or not
+	
 	  
 		@Test
 		 public void profieName() throws InterruptedException{
