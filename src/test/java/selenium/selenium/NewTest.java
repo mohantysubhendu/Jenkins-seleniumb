@@ -28,6 +28,7 @@ public class NewTest {
 	
 	  @BeforeClass
 	  public void beforeClass() {
+		 System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver");
 		 driver = new ChromeDriver();
 	  }
 
@@ -69,7 +70,6 @@ public class NewTest {
 		  String baseUrl="https://admin-dev.salusconnect.io";
 		  driver.get(baseUrl);
 		  Thread.sleep(2000);
-		  System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver");
 		  String url=driver.getCurrentUrl();
 		  Assert.assertEquals(url,"https://admin-dev.salusconnect.io/#/login");
 		  Thread.sleep(2000);
@@ -82,8 +82,7 @@ public class NewTest {
 	  {
 		  String baseUrl="https://admin-dev.salusconnect.io";
 		  driver.get(baseUrl);
-		  Thread.sleep(2000);
-		  System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver");
+		  Thread.sleep(5000);
 		  driver.findElement(By.xpath("/html/body/div[1]/div[1]/div[2]/div/div/div[2]/div/form/div[3]/div/a")).click();
 		  String url=driver.getCurrentUrl();
 		  Thread.sleep(2000);
@@ -98,7 +97,7 @@ public class NewTest {
 	  @Test
 	  public void test_Login() throws InterruptedException
 	  {
-			System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver");
+			
 			Thread.sleep(2000);
 			String baseUrl="https://admin-dev.salusconnect.io";
 			 driver.get(baseUrl);
