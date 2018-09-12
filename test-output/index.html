@@ -90,7 +90,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">5 methods,   5 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -99,6 +99,16 @@
                       <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
                     <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="selenium.selenium.NewTest" hash-for-method="checkFields">checkFields</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="selenium.selenium.NewTest" hash-for-method="profieName">profieName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="selenium.selenium.NewTest" hash-for-method="testUrl">testUrl</a> <!-- method navigator-link -->
@@ -132,6 +142,20 @@
               <span class="class-name">selenium.selenium.NewTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkFields">
+                  </a> <!-- checkFields -->
+                  <span class="method-name">checkFields</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="profieName">
+                  </a> <!-- profieName -->
+                  <span class="method-name">profieName</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="testUrl">
@@ -207,24 +231,32 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(5);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testUrl')
+data.setCell(0, 1, 'profieName')
 data.setCell(0, 2, 'selenium.selenium.NewTest')
-data.setCell(0, 3, 14103);
+data.setCell(0, 3, 26879);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyForgot_Password')
+data.setCell(1, 1, 'testUrl')
 data.setCell(1, 2, 'selenium.selenium.NewTest')
-data.setCell(1, 3, 4574);
+data.setCell(1, 3, 4809);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'test_Login')
+data.setCell(2, 1, 'verifyForgot_Password')
 data.setCell(2, 2, 'selenium.selenium.NewTest')
-data.setCell(2, 3, 3111);
+data.setCell(2, 3, 4646);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'test_Login')
+data.setCell(3, 2, 'selenium.selenium.NewTest')
+data.setCell(3, 3, 2947);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'checkFields')
+data.setCell(4, 2, 'selenium.selenium.NewTest')
+data.setCell(4, 3, 51);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 21 seconds</span>
+              <span class="suite-total-time">Total running time: 39 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -256,20 +288,28 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
+                <span class="method-name">checkFields</span>
+                <span class="method-start">742 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">profieName</span>
+                <span class="method-start">794 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
                 <span class="method-name">testUrl</span>
-                <span class="method-start">838 ms</span>
+                <span class="method-start">27675 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">test_Login</span>
-                <span class="method-start">14943 ms</span>
+                <span class="method-start">32487 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifyForgot_Password</span>
-                <span class="method-start">18055 ms</span>
+                <span class="method-start">35436 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">22631 ms</span>
+                <span class="method-start">40084 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
