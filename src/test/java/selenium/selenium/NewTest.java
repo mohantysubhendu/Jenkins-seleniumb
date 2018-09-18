@@ -110,10 +110,10 @@ public class NewTest {
 	  public void test_Login() throws InterruptedException, FileNotFoundException, IOException
 	  {
 			//System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver");
-			Thread.sleep(2000);
-			String baseUrl="https://admin-dev.salusconnect.io";
+			//Thread.sleep(2000);
+			String baseUrl="https://admin-dev.salusconnect.io/#/login";
 			driver.get(baseUrl);
-			 
+			 Thread.sleep(2000);
 			 
 			 java.io.File file= new java.io.File("config.properties");
 			 Properties prop = new Properties();
