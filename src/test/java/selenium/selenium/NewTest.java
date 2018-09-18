@@ -37,7 +37,8 @@ public class NewTest {
 	
 	  @BeforeClass
 	  public void beforeClass() {
-		 System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver");
+		// System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver");
+		  System.setProperty("webdriver.chrome.driver","/Users/Shared/Jenkins/Home/chromedriver");
 		 driver = new ChromeDriver();
 	  }
 
@@ -108,7 +109,7 @@ public class NewTest {
 	  @Test
 	  public void test_Login() throws InterruptedException, FileNotFoundException, IOException
 	  {
-			System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver");
+			//System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver");
 			Thread.sleep(2000);
 			String baseUrl="https://admin-dev.salusconnect.io";
 			driver.get(baseUrl);
