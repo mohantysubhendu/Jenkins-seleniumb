@@ -3,16 +3,13 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="selenium.selenium.NewTest">
+      <class name="selenium1.NewTest1">
         <methods>
-          <include name="testUrl"/>
           <include name="beforeClass"/>
-          <include name="test_Login"/>
           <include name="afterClass"/>
-          <include name="verifyForgot_Password"/>
-          <include name="profieName"/>
+          <include name="verifyUserName"/>
         </methods>
-      </class> <!-- selenium.selenium.NewTest -->
+      </class> <!-- selenium1.NewTest1 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suite name="Suite" parallel="false">
+<suite thread-count="1" verbose="1" name="Suite" parallel="tests">
   <test name="Test">
     <classes>
       <class name="selenium.selenium.NewTest"/>
     </classes>
   </test> <!-- Test -->
+  
+  <test name="Test1">
+  	<classes>
+  		<class name="selenium1.NewTest1"/>
+  	</classes>
+  </test>
 </suite> <!-- Suite -->

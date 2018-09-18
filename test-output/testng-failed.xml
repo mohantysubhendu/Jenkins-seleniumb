@@ -1,18 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite thread-count="1" name="Failed suite [Suite]" parallel="tests">
+  <test name="Test(failed)" parallel="tests">
     <classes>
       <class name="selenium.selenium.NewTest">
         <methods>
-          <include name="testUrl"/>
           <include name="beforeClass"/>
           <include name="test_Login"/>
           <include name="afterClass"/>
-          <include name="verifyForgot_Password"/>
-          <include name="profieName"/>
         </methods>
       </class> <!-- selenium.selenium.NewTest -->
+      <class name="selenium1.NewTest1">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- selenium1.NewTest1 -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
