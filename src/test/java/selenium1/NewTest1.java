@@ -22,8 +22,8 @@ public class NewTest1 {
   @BeforeClass
   public void beforeClass() {
 	
-	 // System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver");
-	   System.setProperty("webdriver.chrome.driver","/Users/Shared/Jenkins/Home/chromedriver");
+	System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver");
+	   //System.setProperty("webdriver.chrome.driver","/Users/Shared/Jenkins/Home/chromedriver");
 		 driver = new ChromeDriver();
   }
 
@@ -38,13 +38,10 @@ public class NewTest1 {
   public void loginUsingWrongCredentials() throws InterruptedException, FileNotFoundException, IOException
   {
 
-<<<<<<< HEAD
-		
-	
-=======
+
 		//System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver");
 		Thread.sleep(2000);
->>>>>>> 4c55686451b5ac67b2e34e477032b40a4cdd3a06
+
 		String baseUrl="https://admin-dev.salusconnect.io";
 		
 		 java.io.File file= new java.io.File("config.properties");
