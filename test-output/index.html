@@ -53,7 +53,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-Suite">
-                    <span class="test-stats">2 tests</span>
+                    <span class="test-stats">3 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -90,7 +90,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">7 methods,   7 passed</span>
+                    <span class="method-stats">8 methods,   8 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -99,6 +99,11 @@
                       <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
                     <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="selenium2.NewTest2" hash-for-method="Dashboard">Dashboard</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="selenium.selenium.NewTest" hash-for-method="checkFields">checkFields</a> <!-- method navigator-link -->
@@ -111,12 +116,12 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="selenium.selenium.NewTest" hash-for-method="profieName">profieName</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="selenium1.NewTest1" hash-for-method="loginUsingWrongCredentials">loginUsingWrongCredentials</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="selenium1.NewTest1" hash-for-method="testLogin">testLogin</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="selenium.selenium.NewTest" hash-for-method="profieName">profieName</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -131,7 +136,7 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="selenium1.NewTest1" hash-for-method="verifyUserName">verifyUserName</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="selenium1.NewTest1" hash-for-method="verifyEmailId">verifyEmailId</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -192,21 +197,36 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
+              <span class="class-name">selenium2.NewTest2</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Dashboard">
+                  </a> <!-- Dashboard -->
+                  <span class="method-name">Dashboard</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
               <span class="class-name">selenium1.NewTest1</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testLogin">
-                  </a> <!-- testLogin -->
-                  <span class="method-name">testLogin</span>
+                  <a name="loginUsingWrongCredentials">
+                  </a> <!-- loginUsingWrongCredentials -->
+                  <span class="method-name">loginUsingWrongCredentials</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyUserName">
-                  </a> <!-- verifyUserName -->
-                  <span class="method-name">verifyUserName</span>
+                  <a name="verifyEmailId">
+                  </a> <!-- verifyEmailId -->
+                  <span class="method-name">verifyEmailId</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -231,6 +251,11 @@
       &lt;class name=&quot;selenium1.NewTest1&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test1 --&gt;
+  &lt;test name=&quot;Test2&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;selenium2.NewTest2&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test2 --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -246,6 +271,9 @@
               </li>
               <li>
                 <span class="test-name">Test1 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Test2 (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -271,40 +299,44 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(7);
+data.addRows(8);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'profieName')
-data.setCell(0, 2, 'selenium.selenium.NewTest')
-data.setCell(0, 3, 28752);
+data.setCell(0, 1, 'Dashboard')
+data.setCell(0, 2, 'selenium2.NewTest2')
+data.setCell(0, 3, 53073);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'erifyForgot_Password')
+data.setCell(1, 1, 'profieName')
 data.setCell(1, 2, 'selenium.selenium.NewTest')
-data.setCell(1, 3, 24085);
+data.setCell(1, 3, 28643);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'testLogin')
-data.setCell(2, 2, 'selenium1.NewTest1')
-data.setCell(2, 3, 18555);
+data.setCell(2, 1, 'erifyForgot_Password')
+data.setCell(2, 2, 'selenium.selenium.NewTest')
+data.setCell(2, 3, 24267);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'test_Login')
-data.setCell(3, 2, 'selenium.selenium.NewTest')
-data.setCell(3, 3, 12927);
+data.setCell(3, 1, 'loginUsingWrongCredentials')
+data.setCell(3, 2, 'selenium1.NewTest1')
+data.setCell(3, 3, 15470);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'testUrl')
+data.setCell(4, 1, 'test_Login')
 data.setCell(4, 2, 'selenium.selenium.NewTest')
-data.setCell(4, 3, 10793);
+data.setCell(4, 3, 12850);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'verifyUserName')
-data.setCell(5, 2, 'selenium1.NewTest1')
-data.setCell(5, 3, 5654);
+data.setCell(5, 1, 'testUrl')
+data.setCell(5, 2, 'selenium.selenium.NewTest')
+data.setCell(5, 3, 10939);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'checkFields')
-data.setCell(6, 2, 'selenium.selenium.NewTest')
-data.setCell(6, 3, 47);
+data.setCell(6, 1, 'verifyEmailId')
+data.setCell(6, 2, 'selenium1.NewTest1')
+data.setCell(6, 3, 5649);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'checkFields')
+data.setCell(7, 2, 'selenium.selenium.NewTest')
+data.setCell(7, 3, 109);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -337,46 +369,61 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">checkFields</span>
-                <span class="method-start">778 ms</span>
+                <span class="method-start">3093 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">erifyForgot_Password</span>
-                <span class="method-start">827 ms</span>
+                <span class="method-start">3204 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">profieName</span>
-                <span class="method-start">24914 ms</span>
+                <span class="method-start">27472 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testUrl</span>
-                <span class="method-start">53667 ms</span>
+                <span class="method-start">56116 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">test_Login</span>
-                <span class="method-start">64462 ms</span>
+                <span class="method-start">67057 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">77392 ms</span>
+                <span class="method-start">79908 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">selenium1.NewTest1</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">beforeClass</span>
-                <span class="method-start">77494 ms</span>
+                <span class="method-start">80046 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">testLogin</span>
-                <span class="method-start">77898 ms</span>
+                <span class="method-name">loginUsingWrongCredentials</span>
+                <span class="method-start">81170 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">verifyUserName</span>
-                <span class="method-start">96455 ms</span>
+                <span class="method-name">verifyEmailId</span>
+                <span class="method-start">96641 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">102110 ms</span>
+                <span class="method-start">102291 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">selenium2.NewTest2</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">102374 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">Dashboard</span>
+                <span class="method-start">102821 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">afterClass</span>
+                <span class="method-start">155896 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

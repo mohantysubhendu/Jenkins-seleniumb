@@ -5,11 +5,19 @@
     <classes>
       <class name="selenium.selenium.NewTest">
         <methods>
+          <include name="testUrl"/>
           <include name="beforeClass"/>
           <include name="test_Login"/>
           <include name="afterClass"/>
+          <include name="profieName"/>
         </methods>
       </class> <!-- selenium.selenium.NewTest -->
+      <class name="selenium2.NewTest2">
+        <methods>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- selenium2.NewTest2 -->
       <class name="selenium1.NewTest1">
         <methods>
           <include name="beforeClass"/>

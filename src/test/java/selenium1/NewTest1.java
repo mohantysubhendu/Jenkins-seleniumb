@@ -34,11 +34,11 @@ public class NewTest1 {
   // to test login with different combination of username and password
   
   @Test
-  public void testLogin() throws InterruptedException, FileNotFoundException, IOException
+  public void loginUsingWrongCredentials() throws InterruptedException, FileNotFoundException, IOException
   {
 
-		System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver");
-		Thread.sleep(2000);
+		
+	
 		String baseUrl="https://admin-dev.salusconnect.io";
 		
 		 java.io.File file= new java.io.File("config.properties");
@@ -73,15 +73,11 @@ public class NewTest1 {
 		 System.out.println("tried login with wrong username and it couldn't signin");
   }
   
-  public static void login()
-  {
-	  
-  }
-  
+
   //to verify the emailid
   
   @Test
-  public void verifyUserName() throws InterruptedException
+  public void verifyEmailId() throws InterruptedException
   {
 		String baseUrl="https://admin-dev.salusconnect.io";
 		driver.get(baseUrl);
@@ -105,7 +101,8 @@ public class NewTest1 {
 		//System.out.println(b);
 		Assert.assertEquals(b,true);
 	
-  
   }
+  
+  
 
 }
